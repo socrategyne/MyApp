@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber One Schools</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="auth-screen">
+    <div class="auth-box" id="login-box">
+      <h1>🌐Cyber One Schools 👋</h1>
+      <p>Ingia kwa kutumia akaunti yako</p>
+      <input type="text" id="username" placeholder="👤 Jina la mtumiaji">
+      <div class="password-box">
+        <input type="password" id="password" placeholder="🔐 Nenosiri">
+        <span class="toggle" onclick="togglePassword()">👁️</span>
+      </div>
+      <button onclick="login()">Ingia</button>
+      <p class="auth-link">Huna akaunti? <a href="#" onclick="showRegisterForm()">Jisajili sasa</a></p>
+    </div>
+
+    <div class="auth-box" id="register-box" style="display: none;">
+      <h1>Jisajili 📝</h1>
+      <p>Tengeneza akaunti yako mpya</p>
+      <input type="text" id="reg-username" placeholder="👤 Chagua jina la mtumiaji">
+      <input type="email" id="reg-email" placeholder="✉️ Barua pepe">
+      <div class="password-box">
+        <input type="password" id="reg-password" placeholder="🔐 Weka nenosiri">
+        <span class="toggle" onclick="toggleRegPassword()">👁️</span>
+      </div>
+      <div class="password-box">
+        <input type="password" id="reg-confirm-password" placeholder="🔐 Rudia nenosiri">
+      </div>
+      <button onclick="register()">Sajili Akaunti</button>
+      <p class="auth-link">Tayari una akaunti? <a href="#" onclick="showLoginForm()">Ingia hapa</a></p>
+    </div>
+  </div>
+
+  <div id="main-app" style="display: none">
+    <header id="app-header">
+      <!-- Header itawekwa na JavaScript -->
+    </header>
+    <div class="container" id="content"></div>
+    <footer>
+      <p>© 2025 Cyber One Schools | Developer: Hamza Libubulu 🇹🇿</p>
+      <p><button onclick="shareApp()">📤 Shiriki App Hii</button></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
